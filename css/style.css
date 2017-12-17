@@ -124,10 +124,11 @@ li:hover>.submenu {
 }
 
 .firstSectionLongText {
-    margin: 27px 122px 40px 50px;
+    margin: 30px 151px 61px 85px;
     text-align: center;
     font-size: 15px;
     line-height: 21px;
+    width: 372px;
 }
 
 .button {
@@ -148,4 +149,101 @@ li:hover>.submenu {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+}
+
+/*second section - gallery*/
+
+.gallery {
+    background-color: #ffffff;
+    height: 352px;
+    border: 1px solid saddlebrown;
+}
+
+.img1 {
+    height: 351px;
+    border: 1px solid blue;
+    float: left;
+    width: 330px;
+    margin-right: 27px;
+
+    background-image: url("./../images/box1_img.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 28px;
+    background-size: 329px 225px;
+}
+
+.img2 {
+    height: 351px;
+    border: 1px solid blue;
+    float: left;
+    width: 330px;
+    margin-right: 20px;
+
+    background-image: url("./../images/box2_img.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 28px;
+    background-size: 329px 225px;
+
+
+}
+
+.galleryText {
+    height: 254px;
+    border: 1px solid grey;
+    float: right;
+    width: 342px;
+    margin-top: 29px;
+}
+
+.galleryText > p:first-child {
+    margin-top: 27px;
+    margin-left: 22px;
+    border-bottom: 8px solid rgb(30, 188, 154);
+    width: 137px;
+    font-weight: bold;
+}
+
+.galleryText > p:last-child {
+    margin-top: 15px;
+    margin-left: 24px;
+    margin-right: 22px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.galleryText span {
+    margin-top: 23px;
+    display: block;
+}
+
+.chairClair {
+    height: 63px;
+    width: 329px;
+    border: 1px solid deeppink;
+    margin-top: 178px;
+    background-color: rgba(235, 238, 231, 0.7);
+}
+
+.chairMargarita {
+    height: 63px;
+    width: 329px;
+    border: 1px solid deeppink;
+    margin-top: 178px;
+    background-color: rgba(235, 238, 231, 0.7);
+}
+
+.chairClair > p {
+    margin-top: 12px;
+    margin-left: 15px;
+    border-bottom: 8px solid rgb(30, 188, 154);
+    width: 132px;
+    font-weight: bold;
+}
+
+.chairMargarita > p {
+    margin-top: 12px;
+    margin-left: 12px;
+    border-bottom: 8px solid rgb(30, 188, 154);
+    width: 137px;
+    font-weight: bold;
 }
