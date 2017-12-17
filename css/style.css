@@ -1,0 +1,151 @@
+/*header*/
+
+
+* {
+    font-family: 'Raleway', Arial, serif;
+}
+
+.main_width {
+    width: 1057px;
+    border: 1px solid green;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    height: 38px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border: 1px solid red;
+    padding-top: 9px;
+}
+
+.logo {
+    float: left;
+    font-weight: bold;
+}
+
+.logo > span:first-child{
+    color: rgb(30, 188, 154);
+    font-weight: bold;
+    margin-left: -2px;
+}
+
+.logo > span:last-child {
+    margin-left: 3px;
+}
+
+.menu {
+    float: right;
+}
+
+.menu li {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu > li:first-child {
+    word-spacing: -2px;
+    margin-right: 22px;
+}
+
+/*submenu*/
+
+.submenu {
+    position: absolute;
+    width: 150px;
+    right: 400px;
+    padding-top: 20px;
+    display: none;
+    margin-top: 20px;
+}
+
+li:hover>.submenu>li {
+    padding: 10px 10px 10px 10px;
+}
+
+li:hover>.submenu {
+    display: block;
+    background-color: black;
+}
+
+/*first section*/
+
+.firstSection {
+    height: 500px;
+    background-image: linear-gradient(180deg, white, lightgrey);
+}
+
+.blackChair {
+    width: 425px;
+    height: 500px;
+    background-image: url("./../images/black_chair.png");
+    background-repeat: no-repeat;
+    background-position: -47px 59px;
+    background-size: 598px 438px;
+    border: 1px solid cornflowerblue;
+    float: left;
+}
+
+.firstText {
+    width: 630px;
+    height: 500px;
+    border: 1px solid deeppink;
+    float: left;
+}
+
+.firstText > p:first-child {
+    margin-top: 131px;
+    margin-left: 93px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.firstText > p:first-child > span:last-child {
+    color: rgb(30, 188, 154);
+    font-weight: bold;
+}
+
+.firstText > p:first-child > span:first-child {
+    margin-left: -3px;
+    color: rgb(30, 188, 154);
+    font-weight: bold;
+}
+
+.firstSectionLongText {
+    margin: 27px 122px 40px 50px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 21px;
+}
+
+.button {
+    background-color: rgb(30, 188, 154);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    height: 50px;
+    width: 265px;
+    margin-top: -28px;
+    margin-left: 147px;
+    padding-top: 12px;
+}
+
+.button > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
