@@ -59,6 +59,10 @@ li a {
     margin-right: 22px;
 }
 
+.menu > li:nth-child(1){
+    margin-left: 5px;
+}
+
 /*submenu*/
 
 .submenu {
@@ -124,7 +128,7 @@ li:hover>.submenu {
 }
 
 .firstSectionLongText {
-    margin: 30px 151px 61px 85px;
+    margin: 30px 151px 61px 79px;
     text-align: center;
     font-size: 15px;
     line-height: 21px;
@@ -149,6 +153,15 @@ li:hover>.submenu {
     text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
+    width: 100px;
+}
+
+.button span:first-child {
+    margin-left: 9px;
+}
+
+.button span:last-child {
+    padding-left: 11px;
 }
 
 /*second section - gallery*/
@@ -247,3 +260,466 @@ li:hover>.submenu {
     width: 137px;
     font-weight: bold;
 }
+
+/*third section - pricelist*/
+
+.priceList {
+    background-color: lightgrey;
+    height: 730px;
+    border: 1px solid saddlebrown;
+}
+
+.priceList > div {
+    height: 730px;
+    border: 1px solid green;
+}
+
+.horizontalBox {
+    margin-bottom: 30px;
+    border: 1px solid purple;
+    height: 82px;
+    width: 320px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 42px;
+    border-bottom: 8px solid rgb(30, 188, 154);
+}
+
+/*box 1*/
+
+.box1 {
+    float: left;
+    width: 330px;
+    height: 500px;
+    border: 1px solid blue;
+    margin-right: 29px;
+    margin-top: 45px;
+    position: relative;
+}
+
+.circle1 {
+    height: 57px;
+    width: 57px;
+    position: absolute;
+    left: 135px;
+    top: -36px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.blackDot1 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    top: 11px;
+    left: 13px;
+}
+
+.boxHeader1 {
+    margin-top: 27px;
+    margin-left: 98px;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(30, 188, 154);
+}
+
+.circle2 {
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 99px;
+    top: 27px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.circle2 > p > span:first-child {
+    position: absolute;
+    font-size: 47px;
+    font-weight: bold;
+    left: 30px;
+    top: 23px;
+}
+
+.circle2 > p > span:nth-child(2) {
+    position: absolute;
+    font-size: 47px;
+    font-weight: bold;
+    left: 57px;
+    top: 22px;
+}
+
+.circle2 > p > span:last-child {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    left: 82px;
+    top: 25px;
+}
+
+.circle2 > p:nth-child(2) {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    left: 23px;
+    top: 79px;
+}
+
+.box1 > div:nth-child(4) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 247px;
+    height: 44px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 41px;
+    padding-top: 4px;
+}
+
+.box1 > div:nth-child(5) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 290px;
+    height: 44px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 126px;
+    padding-top: 6px;
+}
+
+.buttonBox1 {
+    position: absolute;
+    background-color: rgb(30, 188, 154);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    width: 122px;
+    margin-top: 492px;
+    margin-left: 105px;
+    padding-top: 9px;
+    text-transform: uppercase;
+}
+
+.buttonBox1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*box2*/
+
+.secondBox {
+    float: left;
+    width: 330px;
+    height: 500px;
+    border: 1px solid blue;
+    margin-right: 15px;
+    margin-top: 45px;
+    position: relative;
+}
+
+
+.secondCircle1 {
+    height: 57px;
+    width: 57px;
+    position: absolute;
+    left: 137px;
+    top: -36px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.secondBlackDot1 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    top: 11px;
+    left: 12px;
+}
+
+.secondBoxHeader1 {
+    margin-top: 28px;
+    margin-left: 74px;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(30, 188, 154);
+}
+
+.secondCircle2 {
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 102px;
+    top: 26px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.secondCircle2 > p > span:first-child {
+    position: absolute;
+    font-size: 47px;
+    font-weight: bold;
+    left: 30px;
+    top: 23px;
+}
+
+.secondCircle2 > p > span:nth-child(2) {
+    position: absolute;
+    font-size: 47px;
+    font-weight: bold;
+    left: 57px;
+    top: 22px;
+}
+
+.secondCircle2 > p > span:last-child {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    left: 82px;
+    top: 25px;
+}
+
+.secondCircle2 > p:nth-child(2) {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    left: 23px;
+    top: 79px;
+}
+
+.secondBox > div:nth-child(4) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 243px;
+    height: 48px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 44px;
+    padding-top: 7px;
+}
+
+.secondBox > div:nth-child(5) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 290px;
+    height: 44px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 129px;
+    padding-top: 6px;
+}
+
+.secondBox > div:nth-child(6) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 333px;
+    height: 48px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 83px;
+    padding-top: 10px;
+}
+
+.secondButtonBox1 {
+    position: absolute;
+    background-color: rgb(30, 188, 154);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    width: 122px;
+    margin-top: 494px;
+    margin-left: 465px;
+    padding-top: 9px;
+    text-transform: uppercase;
+}
+
+.secondButtonBox1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*box3*/
+
+.thirdBox {
+    float: right;
+    width: 330px;
+    height: 500px;
+    border: 1px solid blue;
+    margin-right: 5px;
+    margin-top: 45px;
+    position: relative;
+}
+
+
+.thirdCircle1 {
+    height: 57px;
+    width: 57px;
+    position: absolute;
+    left: 137px;
+    top: -36px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.thirdBlackDot1 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    top: 12px;
+    left: 13px;
+}
+
+.thirdBoxHeader1 {
+    margin-top: 28px;
+    margin-left: 74px;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(30, 188, 154);
+}
+
+.thirdCircle2 {
+    height: 130px;
+    width: 130px;
+    position: relative;
+    left: 102px;
+    top: 26px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.thirdCircle2 > p > span:first-child {
+    position: absolute;
+    font-size: 47px;
+    font-weight: bold;
+    left: 10px;
+    top: 22px;
+}
+
+.thirdCircle2 > p > span:last-child {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    left: 79px;
+    top: 26px;
+}
+
+.thirdCircle2 > p:nth-child(2) {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    left: 23px;
+    top: 79px;
+}
+
+.thirdBox > div:nth-child(4) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 243px;
+    height: 48px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 44px;
+    padding-top: 7px;
+}
+
+.thirdBox > div:nth-child(5) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 290px;
+    height: 44px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 128px;
+    padding-top: 5px;
+}
+
+.thirdBox > div:nth-child(6) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 333px;
+    height: 48px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 86px;
+    padding-top: 5px;
+}
+
+.thirdBox > div:nth-child(7) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    left: 0;
+    top: 380px;
+    height: 48px;
+    width: 329px;
+    border: 1px solid green;
+    padding-left: 63px;
+    padding-top: 4px;
+}
+
+.thirdButtonBox1 {
+    position: absolute;
+    background-color: rgb(30, 188, 154);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    height: 35px;
+    width: 122px;
+    margin-top: 491px;
+    margin-left: 826px;
+    padding-top: 8px;
+    text-transform: uppercase;
+}
+
+.thirdButtonBox1 a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
