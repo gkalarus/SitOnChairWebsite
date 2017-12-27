@@ -109,7 +109,7 @@ li:hover > #submenu {
     height: 500px;
     background-image: url("./../images/black_chair.png");
     background-repeat: no-repeat;
-    background-position: -43px 62px;
+    background-position: -41px 65px;
     background-size: 595px 432px;
     float: left;
 }
@@ -720,7 +720,7 @@ textarea {
     font-size: 35px;
     height: 73px;
     width: 342px;
-    margin: -16px 10px 10px 16px;
+    margin: -16px 10px 10px 12px;
     text-transform: uppercase;
     padding: 0 0 0 6px;
 }
@@ -754,19 +754,19 @@ textarea {
     background-repeat: no-repeat;
 }
 #flick {
-    right: 322px;
+    right: 324px;
     background-image: url("./../images/flickr.png");
 }
 #vimeo {
-    right: 284px;
+    right: 286px;
     background-image: url("./../images/vimeo.png");
 }
 #pinterest {
-    right: 244px;
+    right: 246px;
     background-image: url("./../images/pinterest.png");
 }
 #twitter {
-    right: 206px;
+    right: 207px;
     background-image: url("./../images/twitter.png");
 }
 .footerSection p:first-child {
