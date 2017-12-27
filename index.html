@@ -5,7 +5,6 @@
     <title>CodersLab</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
 </head>
 <body>
     <!--header-->
@@ -18,7 +17,7 @@
                 <ul class="menu">
                     <li>
                         <a href="#">o firmie</a>
-                        <ul class="submenu">
+                        <ul id="submenu">
                             <li>
                                 <a href="#">Aktualności</a>
                             </li>
@@ -41,7 +40,7 @@
 
     <section class="firstSection">
         <article class="main_width clearfix">
-            <div class="blackChair"></div>
+            <div class="blackChair"><span>&lt;</span></div>
             <div class="firstText">
                 <p>
                     sit <span>on</span> our <span>chair</span>
@@ -50,9 +49,10 @@
                     Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
                     Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
                     ultricies porta urna.
+                    <span>&gt;</span>
                 </p>
                 <div class="button">
-                    <a href=""><span>zobacz</span><span>więcej</span></a>
+                    <a href="#"><span>zobacz</span><span>więcej</span></a>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@
     <section class="priceList">
         <div class="main_width clearfix">
             <div class="horizontalBox">cennik</div>
-            <!--first pricelist-->
+            <!--first option-->
             <div class="box1">
                 <div class="circle1">
                     <div class="blackDot1">
@@ -108,7 +108,7 @@
             <div class="buttonBox1">
                 <a href="">dołącz</a>
             </div>
-            <!--second pricelist-->
+            <!--second option-->
             <div class="secondBox">
                 <div class="secondCircle1">
                     <div class="secondBlackDot1">
@@ -128,7 +128,7 @@
             <div class="secondButtonBox1">
                 <a href="">dołącz</a>
             </div>
-            <!--third pricelist-->
+            <!--third option-->
             <div class="thirdBox">
                 <div class="thirdCircle1">
                     <div class="thirdBlackDot1">
@@ -149,14 +149,43 @@
             <div class="thirdButtonBox1">
                 <a href="">dołącz</a>
             </div>
-
         </div>
     </section>
 
+    <!--form section-->
+    <form class="formSection">
+        <div class="main_width clearfix">
+            <h1>kontakt</h1>
+            <div class="formSection1">
+                <input type="text" placeholder="Imię" id="text">
+                <input type="email" placeholder="email" id="email">
+                <textarea name="textarea" id="textarea" title="textarea" placeholder="Wiadomość"></textarea>
+            </div>
+            <div class="formSection2">
+                <div class="formImage"></div>
+                <div class="checkbox">
+                    <div class="formCheck clearfix">
+                        <div class="formCheckBox"></div>
+                        <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                    </div>
+                </div>
+                <button class="formButton">Wyślij</button>
+            </div>
+        </div>
+    </form>
 
+    <!--footer-->
 
-
-
+    <footer class="footer">
+        <div class="main_width clearfix footerSection">
+            <p>Copyright 2014 <span>|</span> All Rights Reserved. <span>- Sit On Chair</span></p>
+            <a href="#"><div id="flick"></div></a>
+            <a href="#"><div id="vimeo"></div></a>
+            <a href="#"><div id="pinterest"></div></a>
+            <a href="#"><div id="twitter"></div></a>
+            <p>sit <span>on</span> chair</p>
+        </div>
+    </footer>
 </body>
 </html>
 

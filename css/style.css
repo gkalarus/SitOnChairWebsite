@@ -1,344 +1,339 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('./../raleway/Raleway-Regular.woff2') format('woff2'),
+    url('./../raleway/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url('./../raleway/Raleway-Bold.woff2') format('woff2'),
+    url('./../raleway/Raleway-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 /*header*/
-
-
 * {
     font-family: 'Raleway', Arial, serif;
 }
-
 .main_width {
     width: 1057px;
-    border: 1px solid green;
     margin: 0 auto;
 }
-
 header {
-    background-color: black;
-    color: #fff;
-    height: 38px;
+    background-color: #000000;
+    color: #e7e7e7;
+    height: 35px;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 2px;
     word-spacing: 2px;
-    border: 1px solid red;
     padding-top: 9px;
 }
-
 .logo {
     float: left;
     font-weight: bold;
 }
-
 .logo > span:first-child{
-    color: rgb(30, 188, 154);
+    color: #27C7AB;
     font-weight: bold;
     margin-left: -2px;
 }
-
 .logo > span:last-child {
     margin-left: 3px;
 }
-
 .menu {
     float: right;
+    position: relative;
 }
-
 .menu li {
     display: inline-block;
-    color: #ffffff;
+    color: #e7e7e7;
     margin-left: 25px;
     font-weight: bold;
 }
-
 li a {
     text-decoration: none;
-    color: #ffffff;
+    color: #e7e7e7;
 }
-
 .menu > li:first-child {
     word-spacing: -2px;
     margin-right: 22px;
 }
-
 .menu > li:nth-child(1){
     margin-left: 5px;
 }
-
 /*submenu*/
 
-.submenu {
+#submenu {
     position: absolute;
-    width: 150px;
-    right: 400px;
-    padding-top: 20px;
+    width: 120px;
+    height: 95px;
     display: none;
-    margin-top: 20px;
+    top: 36px;
+    left: -14px;
+    font-size: 10px;
+    text-transform: none;
+    line-height: 2px;
 }
-
-li:hover>.submenu>li {
-    padding: 10px 10px 10px 10px;
+li:hover > #submenu > li {
+    padding: 20px 0 4px 0;
 }
-
-li:hover>.submenu {
+li:hover > #submenu {
     display: block;
     background-color: black;
 }
-
+#submenu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    height: 0;
+    width: 0;
+    margin: 0 auto;
+    top: -20px;
+    left: 45px;
+}
 /*first section*/
 
 .firstSection {
-    height: 500px;
+    height: 502px;
     background-image: linear-gradient(180deg, white, lightgrey);
 }
-
 .blackChair {
+    position: relative;
     width: 425px;
     height: 500px;
     background-image: url("./../images/black_chair.png");
     background-repeat: no-repeat;
-    background-position: -47px 59px;
-    background-size: 598px 438px;
-    border: 1px solid cornflowerblue;
+    background-position: -43px 62px;
+    background-size: 595px 432px;
     float: left;
 }
-
+.blackChair span {
+    position: absolute;
+    font-size: 77px;
+    top: 207px;
+    left: 4px;
+    color: #27C7AB;
+}
 .firstText {
     width: 630px;
     height: 500px;
-    border: 1px solid deeppink;
     float: left;
 }
-
 .firstText > p:first-child {
-    margin-top: 131px;
-    margin-left: 93px;
+    margin: 134px 0 0 96px;
     font-size: 40px;
     text-transform: uppercase;
     font-weight: bold;
 }
+.firstText > span:nth-child(2) {
+    position: absolute;
+    font-size: 40px;
+    top: 0;
+    left: 0;
 
+}
+.firstText > span:nth-child(3) {
+    position: absolute;
+    font-size: 40px;
+    top: 0;
+    right: 0;
+}
 .firstText > p:first-child > span:last-child {
-    color: rgb(30, 188, 154);
+    color: #27C7AB;
     font-weight: bold;
 }
-
 .firstText > p:first-child > span:first-child {
     margin-left: -3px;
-    color: rgb(30, 188, 154);
+    color: #27C7AB;
     font-weight: bold;
 }
-
 .firstSectionLongText {
+    position: relative;
     margin: 30px 151px 61px 79px;
     text-align: center;
     font-size: 15px;
     line-height: 21px;
     width: 372px;
 }
-
+.firstSectionLongText span {
+    position: absolute;
+    font-size: 77px;
+    top: 34px;
+    right: -174px;
+    color: #27C7AB;
+}
 .button {
-    background-color: rgb(30, 188, 154);
+    background-color: #27C7AB;
     border: none;
     border-radius: 10px;
-    color: white;
     text-align: center;
-    font-size: 22px;
+    font-size: 23px;
     height: 50px;
     width: 265px;
-    margin-top: -28px;
-    margin-left: 147px;
+    margin: -28px 0 0 147px;
     padding-top: 12px;
 }
-
 .button > a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #fef7ff;;
     width: 100px;
 }
-
 .button span:first-child {
     margin-left: 9px;
 }
-
 .button span:last-child {
     padding-left: 11px;
 }
-
 /*second section - gallery*/
 
 .gallery {
     background-color: #ffffff;
     height: 352px;
-    border: 1px solid saddlebrown;
 }
-
+.img1, .img2 {
+    height: 351px;
+    float: left;
+    width: 330px;
+    background-repeat: no-repeat;
+    background-position: 0 28px;
+    background-size: 329px 225px;
+}
 .img1 {
-    height: 351px;
-    border: 1px solid blue;
-    float: left;
-    width: 330px;
     margin-right: 27px;
-
     background-image: url("./../images/box1_img.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 28px;
-    background-size: 329px 225px;
 }
-
 .img2 {
-    height: 351px;
-    border: 1px solid blue;
-    float: left;
-    width: 330px;
     margin-right: 20px;
-
     background-image: url("./../images/box2_img.jpg");
-    background-repeat: no-repeat;
-    background-position: 0 28px;
-    background-size: 329px 225px;
-
-
 }
-
 .galleryText {
     height: 254px;
-    border: 1px solid grey;
+    border: 2px solid #dfdfdf;
     float: right;
     width: 342px;
     margin-top: 29px;
 }
-
 .galleryText > p:first-child {
-    margin-top: 27px;
-    margin-left: 22px;
-    border-bottom: 8px solid rgb(30, 188, 154);
+    margin: 27px 0 0 20px;
+    border-bottom: 8px solid #27C7AB;
     width: 137px;
     font-weight: bold;
 }
-
 .galleryText > p:last-child {
-    margin-top: 15px;
-    margin-left: 24px;
-    margin-right: 22px;
+    margin: 13px 22px 0 22px;
     font-size: 14px;
     line-height: 20px;
 }
-
 .galleryText span {
     margin-top: 23px;
     display: block;
 }
-
 .chairClair {
+    position: relative;
     height: 63px;
     width: 329px;
-    border: 1px solid deeppink;
-    margin-top: 178px;
-    background-color: rgba(235, 238, 231, 0.7);
+    margin-top: 179px;
+    background-color: rgba(233, 228, 224, 0.6);
 }
-
 .chairMargarita {
+    position: relative;
     height: 63px;
     width: 329px;
-    border: 1px solid deeppink;
     margin-top: 178px;
-    background-color: rgba(235, 238, 231, 0.7);
+    background-color: rgba(233, 228, 224, 0.6);
 }
-
 .chairClair > p {
-    margin-top: 12px;
-    margin-left: 15px;
-    border-bottom: 8px solid rgb(30, 188, 154);
-    width: 132px;
+    position: absolute;
+    top: 13px;
+    left: 18px;
+    border-bottom: 8px solid #27C7AB;
+    width: 135px;
     font-weight: bold;
 }
-
 .chairMargarita > p {
-    margin-top: 12px;
-    margin-left: 12px;
-    border-bottom: 8px solid rgb(30, 188, 154);
-    width: 137px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    margin: 12px 0 0 11px;
+    border-bottom: 8px solid #27C7AB;
+    width: 139px;
     font-weight: bold;
 }
-
 /*third section - pricelist*/
 
 .priceList {
-    background-color: lightgrey;
-    height: 730px;
-    border: 1px solid saddlebrown;
+    background-color: #F1F1F1;
+    height: 725px;
 }
-
 .priceList > div {
     height: 730px;
-    border: 1px solid green;
 }
-
 .horizontalBox {
     margin-bottom: 30px;
-    border: 1px solid purple;
     height: 82px;
     width: 320px;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: bold;
     padding-top: 42px;
-    border-bottom: 8px solid rgb(30, 188, 154);
+    border-bottom: 8px solid #27C7AB;
 }
-
-/*box 1*/
+/*first option*/
 
 .box1 {
     float: left;
     width: 330px;
     height: 500px;
-    border: 1px solid blue;
-    margin-right: 29px;
-    margin-top: 45px;
+    border: 2px solid #d6d6d6;
+    margin: 45px 29px 0 0;
     position: relative;
+    background-color: #f9f9f9;
 }
-
 .circle1 {
     height: 57px;
     width: 57px;
     position: absolute;
-    left: 135px;
-    top: -36px;
-    border: 3px solid black;
+    left: 134px;
+    top: -38px;
+    border: 2px solid #d6d6d6;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: #FEFEFE;
 }
-
 .blackDot1 {
     position: relative;
     width: 25px;
     height: 25px;
-    background-color: black;
+    background-color: #C2C2C2;
     border-radius: 50%;
-    top: 11px;
-    left: 13px;
+    top: 12px;
+    left: 14px;
 }
-
 .boxHeader1 {
-    margin-top: 27px;
+    margin-top: 26px;
     margin-left: 98px;
     font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(30, 188, 154);
+    color: #27C7AB;
 }
-
 .circle2 {
     height: 130px;
     width: 130px;
     position: relative;
-    left: 99px;
-    top: 27px;
-    border: 3px solid black;
+    left: 98px;
+    top: 25px;
+    border: 3px solid #e1e1e1;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: #ffffff;
+    color: #bfbfbf;
 }
-
 .circle2 > p > span:first-child {
     position: absolute;
     font-size: 47px;
@@ -346,7 +341,6 @@ li:hover>.submenu {
     left: 30px;
     top: 23px;
 }
-
 .circle2 > p > span:nth-child(2) {
     position: absolute;
     font-size: 47px;
@@ -354,7 +348,6 @@ li:hover>.submenu {
     left: 57px;
     top: 22px;
 }
-
 .circle2 > p > span:last-child {
     position: absolute;
     font-size: 16px;
@@ -362,7 +355,6 @@ li:hover>.submenu {
     left: 82px;
     top: 25px;
 }
-
 .circle2 > p:nth-child(2) {
     position: absolute;
     text-transform: uppercase;
@@ -371,36 +363,27 @@ li:hover>.submenu {
     left: 23px;
     top: 79px;
 }
-
+.box1 > div:nth-child(4), .box1 > div:nth-child(5) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    height: 44px;
+    width: 326px;
+    color: #9c9c9c;
+}
 .box1 > div:nth-child(4) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
-    top: 247px;
-    height: 44px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 41px;
-    padding-top: 4px;
+    top: 244px;
+    padding: 4px 0 0 41px;
+    background-color: #e4e4e4;
+    border-top: 3px solid #ffffff;
 }
-
 .box1 > div:nth-child(5) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
-    top: 290px;
-    height: 44px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 126px;
-    padding-top: 6px;
+    top: 288px;
+    padding: 6px 0 0 126px;
+    background-color: #f1f1f1;
 }
-
-.buttonBox1 {
+.buttonBox1, .secondButtonBox1, .thirdButtonBox1 {
     position: absolute;
-    background-color: rgb(30, 188, 154);
     border: none;
     border-radius: 10px;
     color: white;
@@ -408,96 +391,89 @@ li:hover>.submenu {
     font-size: 16px;
     height: 35px;
     width: 122px;
-    margin-top: 492px;
-    margin-left: 105px;
-    padding-top: 9px;
     text-transform: uppercase;
 }
-
+.buttonBox1 {
+    background-color: #27C7AB;
+    margin: 492px 0 0 105px;
+    padding-top: 9px;
+}
 .buttonBox1 a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
-
-
-/*box2*/
+/*second option*/
 
 .secondBox {
     float: left;
     width: 330px;
     height: 500px;
-    border: 1px solid blue;
-    margin-right: 15px;
-    margin-top: 45px;
+    margin: 45px 15px 0 0;
     position: relative;
+    border: 2px solid #27C7AB;
+    background-color: #27C7AB;
 }
-
-
 .secondCircle1 {
     height: 57px;
     width: 57px;
     position: absolute;
     left: 137px;
     top: -36px;
-    border: 3px solid black;
+    border: 3px solid #27c7ab;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: #27c7ab;
 }
-
 .secondBlackDot1 {
     position: relative;
     width: 25px;
     height: 25px;
-    background-color: black;
+    background-color: #f9f9f9;
     border-radius: 50%;
     top: 11px;
-    left: 12px;
+    left: 13px;
 }
-
 .secondBoxHeader1 {
-    margin-top: 28px;
-    margin-left: 74px;
+    margin: 27px 0 0 74px;
     font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(30, 188, 154);
+    color: #f8fdfd;
 }
-
 .secondCircle2 {
     height: 130px;
     width: 130px;
     position: relative;
-    left: 102px;
-    top: 26px;
-    border: 3px solid black;
+    left: 101px;
+    top: 25px;
+    border: 3px solid #27c7ab;
     border-radius: 50%;
     background-color: whitesmoke;
 }
-
 .secondCircle2 > p > span:first-child {
     position: absolute;
     font-size: 47px;
     font-weight: bold;
-    left: 30px;
+    left: 31px;
     top: 23px;
+    color: #27c7ab;
 }
-
 .secondCircle2 > p > span:nth-child(2) {
     position: absolute;
     font-size: 47px;
     font-weight: bold;
     left: 57px;
     top: 22px;
+    color: #27c7ab;
 }
-
 .secondCircle2 > p > span:last-child {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
     left: 82px;
     top: 25px;
+    color: #27c7ab;
 }
-
 .secondCircle2 > p:nth-child(2) {
     position: absolute;
     text-transform: uppercase;
@@ -505,139 +481,104 @@ li:hover>.submenu {
     font-weight: bold;
     left: 23px;
     top: 79px;
+    color: #27c7ab;
 }
-
+.secondBox > div:nth-child(4), .secondBox > div:nth-child(5), .secondBox > div:nth-child(6) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    height: 48px;
+    width: 324px;
+    color: #a5a5a5;
+    margin-left: 1px;
+}
 .secondBox > div:nth-child(4) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
     top: 243px;
-    height: 48px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 44px;
-    padding-top: 7px;
+    padding: 7px 0 0 44px;
+    background-color: #ffffff;
 }
-
 .secondBox > div:nth-child(5) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
     top: 290px;
-    height: 44px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 129px;
-    padding-top: 6px;
+    padding: 6px 0 0 129px;
+    background-color: #f1f1f1;
 }
-
 .secondBox > div:nth-child(6) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
     top: 333px;
-    height: 48px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 83px;
-    padding-top: 10px;
+    padding: 10px 0 0 83px;
+    background-color: #ffffff;
 }
-
 .secondButtonBox1 {
-    position: absolute;
-    background-color: rgb(30, 188, 154);
-    border: none;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    height: 35px;
-    width: 122px;
-    margin-top: 494px;
-    margin-left: 465px;
+    background-color: #ffffff;
+    margin: 494px 0 0 465px;
     padding-top: 9px;
-    text-transform: uppercase;
 }
-
 .secondButtonBox1 a {
     text-decoration: none;
-    color: white;
+    color: #27c7ab;
+    font-weight: bold;
 }
-
-
-/*box3*/
+/*third option*/
 
 .thirdBox {
     float: right;
     width: 330px;
     height: 500px;
-    border: 1px solid blue;
-    margin-right: 5px;
-    margin-top: 45px;
+    margin: 45px 5px 0 0;
     position: relative;
+    border: 2px solid #d6d6d6;
+    background-color: #f9f9f9;;
 }
-
-
 .thirdCircle1 {
     height: 57px;
     width: 57px;
     position: absolute;
-    left: 137px;
+    left: 134px;
     top: -36px;
-    border: 3px solid black;
+    border: 2px solid #d6d6d6;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: #f9f9f9;
 }
-
 .thirdBlackDot1 {
     position: relative;
     width: 25px;
     height: 25px;
-    background-color: black;
+    background-color: #c2c2c2;
     border-radius: 50%;
     top: 12px;
-    left: 13px;
+    left: 14px;
 }
-
 .thirdBoxHeader1 {
-    margin-top: 28px;
-    margin-left: 74px;
+    margin: 28px 0 0 74px;
     font-size: 23px;
     font-weight: bold;
     text-transform: uppercase;
-    color: rgb(30, 188, 154);
+    color: #27C7AB;
 }
-
 .thirdCircle2 {
     height: 130px;
     width: 130px;
     position: relative;
-    left: 102px;
-    top: 26px;
-    border: 3px solid black;
+    left: 98px;
+    top: 25px;
+    border: 3px solid #e1e1e1;
     border-radius: 50%;
-    background-color: whitesmoke;
+    background-color: #ffffff;
+    color: #bfbfbf;
 }
-
 .thirdCircle2 > p > span:first-child {
     position: absolute;
     font-size: 47px;
     font-weight: bold;
-    left: 10px;
+    left: 12px;
     top: 22px;
 }
-
 .thirdCircle2 > p > span:last-child {
     position: absolute;
     font-size: 16px;
     font-weight: bold;
-    left: 79px;
+    left: 82px;
     top: 26px;
 }
-
 .thirdCircle2 > p:nth-child(2) {
     position: absolute;
     text-transform: uppercase;
@@ -646,80 +587,198 @@ li:hover>.submenu {
     left: 23px;
     top: 79px;
 }
-
+.thirdBox > div:nth-child(4), .thirdBox > div:nth-child(5), .thirdBox > div:nth-child(6), .thirdBox > div:nth-child(7) {
+    position: absolute;
+    font-size: 24px;
+    font-weight: normal;
+    height: 48px;
+    width: 326px;
+    color: #9c9c9c;
+}
 .thirdBox > div:nth-child(4) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
     top: 243px;
-    height: 48px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 44px;
-    padding-top: 7px;
+    padding: 4px 0 0 42px;
+    background-color: #e4e4e4;
+    border-top: 3px solid #ffffff;
 }
-
 .thirdBox > div:nth-child(5) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
     top: 290px;
-    height: 44px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 128px;
-    padding-top: 5px;
+    padding: 5px 0 0 128px;
+    background-color: #f1f1f1;
 }
-
 .thirdBox > div:nth-child(6) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
-    top: 333px;
-    height: 48px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 86px;
-    padding-top: 5px;
+    top: 334px;
+    padding: 5px 0 0 86px;
+    background-color: #e4e4e4;
 }
-
 .thirdBox > div:nth-child(7) {
-    position: absolute;
-    font-size: 24px;
-    font-weight: normal;
-    left: 0;
-    top: 380px;
-    height: 48px;
-    width: 329px;
-    border: 1px solid green;
-    padding-left: 63px;
-    padding-top: 4px;
+    top: 374px;
+    padding: 11px 0 0 63px;
+    background-color: #f1f1f1;
 }
-
 .thirdButtonBox1 {
-    position: absolute;
-    background-color: rgb(30, 188, 154);
+    background-color: #27C7AB;
+    margin: 491px 0 0 826px;
+    padding-top: 8px;
+}
+.thirdButtonBox1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+/*form section*/
+
+.formSection {
+    height: 538px;
+}
+.formSection1 {
+    float: left;
+}
+.formSection h1 {
+    border-bottom: 8px solid #27C7AB;
+    width: 320px;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 31px 0 0 7px;
+    padding-bottom: 4px;
+    font-weight: bold;
+    color: #585858;
+}
+#text, #email {
+    display: block;
+    background-color: #ffffff;
+    color: #c8c8c8;
+    margin: 47px 30px 0 6px;
+    border: 1px solid #27C7AB;
+    font-family: 'Raleway', Arial, serif;
+    width: 635px;
+    height: 66px;
+    font-size: 32px;
+    padding: 10px 10px 10px 13px;
+}
+#email {
+    margin: 26px 0 10px 6px;
+    width: 633px;
+}
+textarea {
+    height: 189px;
+    width: 635px;
+    box-sizing: border-box;
+    border: 1px solid #27C7AB;
+    background-color: #ffffff;
+    resize: none;
+    font-family: 'Raleway', Arial, serif;
+    color: #c8c8c8;
+    margin: 15px 0 10px 5px;
+    padding: 10px 10px 10px 15px;
+    font-size: 32px;
+    overflow: hidden;
+}
+.formSection2 {
+    float: right;
+}
+.formImage {
+    width: 285px;
+    height: 235px;
+    background-image: url("./../images/red_chair.png");
+    background-repeat: no-repeat;
+    background-position: 33px 19px;
+    background-size: 261px 209px;
+}
+.formCheck {
+    margin-top: 27px;
+    display: inline-block;
+}
+.formCheckBox {
+    position: relative;
+    left: 2px;
+    width: 49px;
+    height: 49px;
+    background-image: url("./../images/form_ok.jpg");
+    background-repeat: no-repeat;
+    background-position: 2px 7px;
+    background-size: 39px 36px;
+    float: left;
+    margin: 0 10px 10px 11px;
+    border: 1px solid  #27C7AB;
+}
+.formCheck p {
+    width: 324px;
+    height: 100px;
+    float: left;
+    margin: -4px 10px 0 -30px;
+    padding: 7px 10px 10px 33px;
+    font-size: 20px;
+    color: #c7c7c7;
+}
+.formButton {
+    background-color: #27C7AB;
     border: none;
     border-radius: 10px;
     color: white;
     text-align: center;
-    font-size: 16px;
-    height: 35px;
-    width: 122px;
-    margin-top: 491px;
-    margin-left: 826px;
-    padding-top: 8px;
+    font-size: 35px;
+    height: 73px;
+    width: 342px;
+    margin: -16px 10px 10px 16px;
     text-transform: uppercase;
+    padding: 0 0 0 6px;
 }
-
-.thirdButtonBox1 a {
-    text-decoration: none;
-    color: white;
+/*footer*/
+.footer {
+    height: 40px;
 }
-
-
-
-
+.footerSection {
+    position: relative;
+    height: 40px;
+}
+.footer p {
+    float: left;
+}
+.footer p:last-child {
+    float: right;
+    margin: 12px 0 0 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #979797;
+}
+.footer p:last-child span {
+    font-weight: bold;
+    color: #9b9b9b;
+}
+#flick, #vimeo, #pinterest, #twitter {
+    width: 37px;
+    height: 37px;
+    position: absolute;
+    top: 0;
+    background-repeat: no-repeat;
+}
+#flick {
+    right: 322px;
+    background-image: url("./../images/flickr.png");
+}
+#vimeo {
+    right: 284px;
+    background-image: url("./../images/vimeo.png");
+}
+#pinterest {
+    right: 244px;
+    background-image: url("./../images/pinterest.png");
+}
+#twitter {
+    right: 206px;
+    background-image: url("./../images/twitter.png");
+}
+.footerSection p:first-child {
+    margin: 18px 0 0 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    width: 500px;
+    color: #a1a1a1;
+}
+.footerSection p:first-child > span {
+    margin: 0 -4px 0 -2px;
+}
+.footerSection p:first-child > span:last-child {
+    margin: 0 0 0 -5px;
+}
