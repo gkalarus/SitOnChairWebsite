@@ -16,17 +16,11 @@
             <nav class="clearfix">
                 <ul class="menu">
                     <li>
-                        <a href="#">o firmie</a>
+                        o firmie
                         <ul id="submenu">
-                            <li>
-                                <a href="#">Aktualności</a>
-                            </li>
-                            <li>
-                                <a href="#">Nasz team</a>
-                            </li>
-                            <li>
-                                <a href="#">Historia</a>
-                            </li>
+                            <li>Aktualności</li>
+                            <li>Nasz team</li>
+                            <li>Historia</li>
                         </ul>
                     </li>
                     <li><a href="#">galeria</a></li>
@@ -36,11 +30,23 @@
         </div>
     </header>
 
-    <!--first section-->
+    <!--slider-->
 
     <section class="firstSection">
         <article class="main_width clearfix">
-            <div class="blackChair"><span>&lt;</span></div>
+            <div class="sliderSection">
+                <ul class="slider">
+                    <li><img src="images/black_chair.png"></li>
+                    <li><img src="images/chair2.png"></li>
+                    <li><img src="images/chair4.png"></li>
+                </ul>
+                <article class="leftArrow" id="prevBtn">&lt;</article>
+                <article class="rightArrow" id="nextBtn">&gt;</article>
+            </div>
+
+
+            <!--<div class="blackChair"><span>&lt;</span></div>-->
+
             <div class="firstText">
                 <p>
                     sit <span>on</span> our <span>chair</span>
@@ -49,7 +55,7 @@
                     Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.
                     Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a,
                     ultricies porta urna.
-                    <span>&gt;</span>
+                    <!--<span>&gt;</span>-->
                 </p>
                 <div class="button">
                     <a href="#"><span>zobacz</span><span>więcej</span></a>
@@ -186,6 +192,8 @@
             <p>sit <span>on</span> chair</p>
         </div>
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
 
