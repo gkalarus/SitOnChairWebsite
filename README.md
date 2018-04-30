@@ -1,7 +1,7 @@
 # Sit On Chair
-Simple single-page website.
+Simple single-page website. The assumption of this project was to reproduce the PSD layout as closely as possible.
 
->Programming and script languages I used: HTML, CSS, JavaScript
+>Technologies: HTML, CSS, JavaScript
 
 ## PSD layout
 ![Picture](images/warsztat1.jpg)
@@ -10,5 +10,5 @@ Simple single-page website.
 
 Here you can find a link to the live preview of the SitOnChair project:
 ```shell 
-
+https://gkalarus.github.io/SitOnChairWebsite/
 ```
